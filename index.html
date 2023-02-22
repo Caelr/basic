@@ -7,7 +7,575 @@
     <title>Vite App</title>
   </head>
   <body>
-    <div id="app"></div>
-    <script type="module" src="/main.js"></script>
+    <nav class="navigation">
+      <a href="/" class="navigation__link"
+        >Home
+        <svg
+          class="navigation__link__icon"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 208.3 27.7"
+          aria-hidden="true"
+          data-acsb-hidden="true"
+          data-acsb-force-hidden="true"
+        >
+          <path
+            d="M0 24.1h11.7c5.5 0 8.7-2.3 8.7-6.8 0-2.8-1.7-4.5-4.1-5.3 2-.9 3.4-2.6 3.4-5.3 0-3.5-2.2-5.9-7.5-5.9H0v23.3zM13.1 7.9c0 1.6-1 2.4-3.2 2.4H6.4V5.5h3.5c2.2 0 3.2.8 3.2 2.4zm.7 9c0 1.7-1 2.4-3.3 2.4H6.4v-4.9h4.2c2.2 0 3.2.8 3.2 2.5zM38.2 24.1h6.7L36.8.7h-8.4l-8.1 23.4h6.5l1.2-3.8h9.1l1.1 3.8zM32.5 5.9l2.9 9.5h-5.9l3-9.5zM55.1 24.5c6.3 0 10.3-3 10.3-7.7 0-3.8-2.5-5.8-6.5-6.6l-5.1-1c-2-.4-2.6-1-2.6-2.1S52.4 5 54.5 5c2.4 0 4.1 1 4.2 3.1H65C65 2.5 60.3.3 54.5.3c-5.6 0-9.7 2.8-9.7 7.3 0 3.8 2.5 5.8 6.5 6.6l5.1 1c2 .4 2.6 1 2.6 2.1 0 1.5-1.4 2.3-3.7 2.3-2.6 0-4.5-1.3-4.6-3.8h-6.3c.2 5.5 3.7 8.7 10.7 8.7zM67.3 24.1h6.4V.7h-6.4v23.4zM82 12.4c0-3.9 2.1-6.8 5.6-6.8 2.9 0 4.7 1.7 5.1 3.7h6.7C98.8 3.2 93.6.2 87.7.2 80 .2 75.4 5 75.4 12.3s4.5 12.1 12.3 12.1c6 0 11.2-2.9 11.8-9.1h-6.7c-.4 2.1-2.1 3.7-5.1 3.7-3.6.2-5.7-2.7-5.7-6.6zM113.7 0h-5.2l-10 27.7h5.2l10-27.7zM137.8 12.4c0-6.6-3.6-11.7-12.8-11.7h-9.8v23.4h9.8c9.2 0 12.8-5.1 12.8-11.7zm-6.6 0c0 4.6-2.6 6.3-6.2 6.3h-3.3V6.1h3.3c3.6 0 6.2 1.7 6.2 6.3zM139.5 24.1H158v-5.3h-12.2v-4h10.7V9.7h-10.7V6.1h11.9V.7h-18.2v23.4zM180 8.9c0-5.9-3.8-8.1-9.6-8.1h-10.1v23.4h6.4V17h3.8c5.7 0 9.5-2.2 9.5-8.1zm-6.6 0c0 2.3-1.1 3.2-3.7 3.2h-3.1V5.6h3.1c2.6 0 3.7 1 3.7 3.3zM181 6.2h7.4v17.9h6.4V6.2h7.4V.7H181v5.5zM203.5 23.7c-2.6 0-4.8-2.1-4.8-4.8 0-2.6 2.1-4.8 4.8-4.8s4.8 2.1 4.8 4.8c0 2.6-2.2 4.8-4.8 4.8zm0-8.8c-2.2 0-4 1.8-4 4s1.8 4 4 4 4-1.8 4-4-1.8-4-4-4z"
+          ></path>
+          <path
+            d="M204 17.2h-1.4v1.6h1.4c.5 0 .7-.3.7-.8s-.3-.8-.7-.8zm-.1-.8c1.2 0 1.8.5 1.8 1.6 0 .6-.3 1.1-.9 1.3l1.2 1.8h-1.2l-1.1-1.6h-1.2v1.6h-1.1v-4.7h2.5z"
+          ></path>
+        </svg>
+      </a>
+      <ul class="navigation__list">
+        <li class="navigation__list__item">
+          <a href="" class="navigation__list__link">Work</a>
+        </li>
+        <li class="navigation__list__item">
+          <a href="" class="navigation__list__link">About</a>
+        </li>
+        <li class="navigation__list__item">
+          <a href="" class="navigation__list__link">News</a>
+        </li>
+        <li class="navigation__list__item">
+          <a href="" class="navigation__list__link">Thinking</a>
+        </li>
+        <li class="navigation__list__item">
+          <a href="" class="navigation__list__link">Careers</a>
+        </li>
+        <li class="navigation__list__item">
+          <a href="" class="navigation__list__link">Contact</a>
+        </li>
+      </ul>
+      <svg
+        class="navigation__button"
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 21 5"
+        aria-hidden="true"
+        data-acsb-hidden="true"
+        data-acsb-force-hidden="true"
+      >
+        <circle cx="2.5" cy="2.5" r="2.5"></circle>
+        <circle cx="10.5" cy="2.5" r="2.5"></circle>
+        <circle cx="18.5" cy="2.5" r="2.5"></circle>
+      </svg>
+    </nav>
+    <main class="content" id="content">
+      <div class="home">
+        <div class="home__wrapper">
+          <header class="home__header">
+            <figure class="home__header__media">
+              <video
+                src="/header.mp4"
+                loop
+                autoplay
+                muted
+                class="home__header__video"
+              ></video>
+            </figure>
+          </header>
+          <section class="home__highlight">
+            <h1 class="home__highlight__title">
+              BASIC/DEPT® is a global branding and digital design agency
+              building products, services, and eCommerce experiences that turn
+              cultural values into company value.
+            </h1>
+            <a href="/" class="home__highlight__link">See the work</a>
+            <svg
+              class="home__highlight__icon"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 307 100"
+              aria-hidden="true"
+              data-acsb-hidden="true"
+              data-acsb-force-hidden="true"
+            >
+              <path
+                d="M0 86.8h41.9c19.6 0 31.3-8.3 31.3-24.5 0-10.2-6-16.2-15.1-19.2 7.2-3.4 12.1-9.4 12.1-19.2 0-12.5-7.9-21.5-27.2-21.5H0v84.4zm47.2-58.5c0 5.7-3.8 8.7-11.7 8.7H23V19.6h12.5c8.3 0 11.7 3 11.7 8.7zm2.6 32.5c0 6-3.8 8.7-12.1 8.7H22.6V51.7h15.1c8.3.4 12.1 3 12.1 9.1zM128.3 0h-18.9L73.6 100h18.5L128.3 0zm88.3 44.5c0-23.8-12.8-42.3-46-42.3h-35.5v84.5h35.5c32.8.1 46-18.4 46-42.2zm-24.1 0c0 16.6-9.4 22.6-22.3 22.6h-12.1V21.9h12.1c12.8 0 22.3 6 22.3 22.6zM224.2 46.4c0 22.6 18.5 41.1 41.1 41.1s41.1-18.5 41.1-41.1-18.5-41.1-41.1-41.1c-22.7 0-41.1 18.5-41.1 41.1zm7.9 0c0-18.9 14.7-34 33.2-34 18.5 0 33.2 15.1 33.2 34s-15.1 34-33.2 34c-18.5-.4-33.2-15.5-33.2-34zM246 66.8h12.8v-14h7.5l7.5 14h14l-9.4-16.6c4.2-1.9 7.5-6.8 7.5-12.1 0-9.4-6-14-16.6-14h-23.8v42.6h.5zm26.8-28.7c0 3.4-2.3 4.9-6.4 4.9h-7.9v-9h7.9c4.5.3 6.4 1.1 6.4 4.1z"
+              ></path>
+            </svg>
+            <div class="home__highlight__gallery">
+              <a href="/" class="home__highlight__gallery__link">
+                <figure class="home__highlight__gallery__media">
+                  <img
+                    src="/img-1.jpg"
+                    alt="People climbing a mountain"
+                    class="home__highlight__gallery__image"
+                  />
+                  <figcaption class="home__highlight__gallery__label">
+                    <strong class="home__highlight__gallery__label__title"
+                      >Patagonia</strong
+                    >
+                    <p class="home__highlight__gallery__label__description">
+                      An e-commerce experience driven by Patagonia's brand
+                      mission
+                    </p>
+                  </figcaption>
+                </figure>
+              </a>
+              <a href="/" class="home__highlight__gallery__link">
+                <figure class="home__highlight__gallery__media">
+                  <img
+                    src="/img-2.jpg"
+                    alt="People climbing a mountain"
+                    class="home__highlight__gallery__image"
+                  />
+                  <figcaption class="home__highlight__gallery__label">
+                    <strong class="home__highlight__gallery__label__title"
+                      >Wilson</strong
+                    >
+                    <p class="home__highlight__gallery__label__description">
+                      A century-old sports brand finding its place in culture
+                    </p>
+                  </figcaption>
+                </figure>
+              </a>
+              <a href="/" class="home__highlight__gallery__link">
+                <figure class="home__highlight__gallery__media">
+                  <video
+                    src="/video-1.mp4"
+                    loop
+                    autoplay
+                    muted
+                    class="home__highlight__gallery__video"
+                  ></video>
+                  <figcaption class="home__highlight__gallery__label">
+                    <strong class="home__highlight__gallery__label__title"
+                      >Google store</strong
+                    >
+                    <p class="home__highlight__gallery__label__description">
+                      An e-commerce experience helping Google bring its hardware
+                      to people accross the globe
+                    </p>
+                  </figcaption>
+                </figure>
+              </a>
+            </div>
+          </section>
+          <section class="home__featured">
+            <h2 class="home__featured__title">Featured engagements</h2>
+            <ul class="home__featured__list">
+              <li class="home__featured__item">
+                <figure class="home__featured__media">
+                  <img
+                    src="/google.webp"
+                    alt="logo google"
+                    class="home__featured__image"
+                  />
+                </figure>
+
+                <h3 class="home__featured__item__title">Google</h3>
+                <p class="home__featured__item__description">
+                  Our embedded partnership with Google is as deep as it gets.
+                  We’re the lead creative agency for Google Store and provide
+                  strategy, design, and prototyping to other divisions. Learn
+                  more about our partnership
+                  <a class="home__featured__link" href="/">here</a>
+                </p>
+              </li>
+              <li class="home__featured__item">
+                <figure class="home__featured__media">
+                  <img
+                    src="/kfc.webp"
+                    alt="logo google"
+                    class="home__featured__image"
+                  />
+                </figure>
+
+                <h3 class="home__featured__item__title">KFC</h3>
+                <p class="home__featured__item__description">
+                  An award-winning global, digital transformation engagement
+                  spanning eCommerce, mobile app, and new drive thru
+                  experiences. Bringing KFC’s brand story to life while making
+                  it easier for customers to buy chicken. Learn more about our
+                  partnership
+                  <a class="home__featured__link" href="/">here</a>
+                </p>
+              </li>
+              <li class="home__featured__item">
+                <figure class="home__featured__media">
+                  <img
+                    src="/wilson.webp"
+                    alt="logo google"
+                    class="home__featured__image"
+                  />
+                </figure>
+
+                <h3 class="home__featured__item__title">Wilson</h3>
+                <p class="home__featured__item__description">
+                  A reimagining of Wilson’s brand visual identity, and brand
+                  campaign, to support a new product drop and the launch of the
+                  first brick and mortar retail location in the brand’s 108-year
+                  history. Read our full case study
+                  <a class="home__featured__link" href="/">here</a>
+                </p>
+              </li>
+              <li class="home__featured__item">
+                <figure class="home__featured__media">
+                  <img
+                    src="/atandt.webp"
+                    alt="logo google"
+                    class="home__featured__image"
+                  />
+                </figure>
+
+                <h3 class="home__featured__item__title">AT&T</h3>
+                <p class="home__featured__item__description">
+                  Redesigning the digital flagship for the largest
+                  telecommunications company in the world. Creating frictionless
+                  paths to purchase for a wide range of consumers across a vast
+                  portfolio of products and services.
+                </p>
+              </li>
+              <li class="home__featured__item">
+                <figure class="home__featured__media">
+                  <img
+                    src="/patagonia.webp"
+                    alt="logo google"
+                    class="home__featured__image"
+                  />
+                </figure>
+
+                <h3 class="home__featured__item__title">Patagonia</h3>
+                <p class="home__featured__item__description">
+                  Ongoing partnership providing strategy, branding, experience
+                  design, and development focused on bringing their mission and
+                  offerings to consumers through brand-led programs and
+                  platforms. Read our full case study
+                  <a class="home__featured__link" href="/">here</a>
+                </p>
+              </li>
+            </ul>
+          </section>
+          <section class="home__about">
+            <h2 class="home__about__title">
+              BASIC/DEPT® helps brand ● connect w/ culture
+            </h2>
+            <p class="home__about__description">Adweek agency spotlight</p>
+            <a href="/" class="home__about__link">Aboout us</a>
+            <video
+              src="/about.mp4"
+              loop
+              autoplay
+              muted
+              class="home__about__video"
+            ></video>
+          </section>
+          <section class="home__news">
+            <h2 class="home__news__title">Featured news</h2>
+            <a href="/" class="home__news__link">View all</a>
+            <ul class="home__news__list">
+              <li class="home__news__item">
+                <a href="/" class="home__news__link">
+                  <figure class="home__news__media">
+                    <img
+                      src="/news-1.png"
+                      alt="abstract flower"
+                      class="home__news__image"
+                    />
+                  </figure>
+                  <h3 class="home__news__link__title">
+                    5 ways to fall in love with learning accessibility
+                  </h3>
+                  <p class="home__news__date">Press 2.9.23</p>
+                  <svg
+                    class="home__news__arrow"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 17 17"
+                    aria-hidden="true"
+                    data-acsb-hidden="true"
+                    data-acsb-force-hidden="true"
+                  >
+                    <path d="M.1 7.5h14v2H.1z"></path>
+                    <path d="m8.4 0 8.5 8.5-1.4 1.4L7 1.4 8.4 0z"></path>
+                    <path d="m7 15.6 8.5-8.5 1.4 1.4L8.4 17 7 15.6z"></path>
+                  </svg>
+                </a>
+              </li>
+              <li class="home__news__item">
+                <a href="/" class="home__news__link">
+                  <figure class="home__news__media">
+                    <img
+                      src="/news-2.png"
+                      alt="abstract flower"
+                      class="home__news__image"
+                    />
+                  </figure>
+                  <h3 class="home__news__link__title">
+                    How brands can represent people with disabilities with
+                    authenticity
+                  </h3>
+                  <p class="home__news__date">Press 2.7.23</p>
+                  <svg
+                    class="home__news__arrow"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 17 17"
+                    aria-hidden="true"
+                    data-acsb-hidden="true"
+                    data-acsb-force-hidden="true"
+                  >
+                    <path d="M.1 7.5h14v2H.1z"></path>
+                    <path d="m8.4 0 8.5 8.5-1.4 1.4L7 1.4 8.4 0z"></path>
+                    <path d="m7 15.6 8.5-8.5 1.4 1.4L8.4 17 7 15.6z"></path>
+                  </svg>
+                </a>
+              </li>
+              <li class="home__news__item">
+                <a href="/" class="home__news__link">
+                  <figure class="home__news__media">
+                    <img
+                      src="/news-3.png"
+                      alt="abstract flower"
+                      class="home__news__image"
+                    />
+                  </figure>
+                  <h3 class="home__news__link__title">
+                    How brand can contribute to make a better Internet
+                  </h3>
+                  <p class="home__news__date">Press 1.19.23</p>
+                  <svg
+                    class="home__news__arrow"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 17 17"
+                    aria-hidden="true"
+                    data-acsb-hidden="true"
+                    data-acsb-force-hidden="true"
+                  >
+                    <path d="M.1 7.5h14v2H.1z"></path>
+                    <path d="m8.4 0 8.5 8.5-1.4 1.4L7 1.4 8.4 0z"></path>
+                    <path d="m7 15.6 8.5-8.5 1.4 1.4L8.4 17 7 15.6z"></path>
+                  </svg>
+                </a>
+              </li>
+              <li class="home__news__item">
+                <a href="/" class="home__news__link">
+                  <figure class="home__news__media">
+                    <img
+                      src="/news-4.png"
+                      alt="abstract flower"
+                      class="home__news__image"
+                    />
+                  </figure>
+                  <h3 class="home__news__link__title">
+                    Data and creativity for campaign
+                  </h3>
+                  <p class="home__news__date">Press 12.14.22</p>
+                  <svg
+                    class="home__news__arrow"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 17 17"
+                    aria-hidden="true"
+                    data-acsb-hidden="true"
+                    data-acsb-force-hidden="true"
+                  >
+                    <path d="M.1 7.5h14v2H.1z"></path>
+                    <path d="m8.4 0 8.5 8.5-1.4 1.4L7 1.4 8.4 0z"></path>
+                    <path d="m7 15.6 8.5-8.5 1.4 1.4L8.4 17 7 15.6z"></path>
+                  </svg>
+                </a>
+              </li>
+              <li class="home__news__item">
+                <a href="/" class="home__news__link">
+                  <figure class="home__news__media">
+                    <img
+                      src="/news-5.png"
+                      alt="abstract flower"
+                      class="home__news__image"
+                    />
+                  </figure>
+                  <h3 class="home__news__link__title">
+                    Case study, how to win agency of the year
+                  </h3>
+                  <p class="home__news__date">Press 2.9.23</p>
+                  <svg
+                    class="home__news__arrow"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 17 17"
+                    aria-hidden="true"
+                    data-acsb-hidden="true"
+                    data-acsb-force-hidden="true"
+                  >
+                    <path d="M.1 7.5h14v2H.1z"></path>
+                    <path d="m8.4 0 8.5 8.5-1.4 1.4L7 1.4 8.4 0z"></path>
+                    <path d="m7 15.6 8.5-8.5 1.4 1.4L8.4 17 7 15.6z"></path>
+                  </svg>
+                </a>
+              </li>
+              <li class="home__news__item">
+                <a href="/" class="home__news__link">
+                  <figure class="home__news__media">
+                    <img
+                      src="/news-6.png"
+                      alt="abstract flower"
+                      class="home__news__image"
+                    />
+                  </figure>
+                  <h3 class="home__news__link__title">
+                    B/D® Jams earns awwwards site of the month
+                  </h3>
+                  <p class="home__news__date">Press 10.22.22</p>
+                  <svg
+                    class="home__news__arrow"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 17 17"
+                    aria-hidden="true"
+                    data-acsb-hidden="true"
+                    data-acsb-force-hidden="true"
+                  >
+                    <path d="M.1 7.5h14v2H.1z"></path>
+                    <path d="m8.4 0 8.5 8.5-1.4 1.4L7 1.4 8.4 0z"></path>
+                    <path d="m7 15.6 8.5-8.5 1.4 1.4L8.4 17 7 15.6z"></path>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </section>
+        </div>
+      </div>
+    </main>
+    <footer class="footer">
+      <a href="/" class="footer__link">
+        <svg
+          class="footer__link__icon"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 307 100"
+          aria-hidden="true"
+          data-acsb-hidden="true"
+          data-acsb-force-hidden="true"
+        >
+          <path
+            d="M0 86.8h41.9c19.6 0 31.3-8.3 31.3-24.5 0-10.2-6-16.2-15.1-19.2 7.2-3.4 12.1-9.4 12.1-19.2 0-12.5-7.9-21.5-27.2-21.5H0v84.4zm47.2-58.5c0 5.7-3.8 8.7-11.7 8.7H23V19.6h12.5c8.3 0 11.7 3 11.7 8.7zm2.6 32.5c0 6-3.8 8.7-12.1 8.7H22.6V51.7h15.1c8.3.4 12.1 3 12.1 9.1zM128.3 0h-18.9L73.6 100h18.5L128.3 0zm88.3 44.5c0-23.8-12.8-42.3-46-42.3h-35.5v84.5h35.5c32.8.1 46-18.4 46-42.2zm-24.1 0c0 16.6-9.4 22.6-22.3 22.6h-12.1V21.9h12.1c12.8 0 22.3 6 22.3 22.6zM224.2 46.4c0 22.6 18.5 41.1 41.1 41.1s41.1-18.5 41.1-41.1-18.5-41.1-41.1-41.1c-22.7 0-41.1 18.5-41.1 41.1zm7.9 0c0-18.9 14.7-34 33.2-34 18.5 0 33.2 15.1 33.2 34s-15.1 34-33.2 34c-18.5-.4-33.2-15.5-33.2-34zM246 66.8h12.8v-14h7.5l7.5 14h14l-9.4-16.6c4.2-1.9 7.5-6.8 7.5-12.1 0-9.4-6-14-16.6-14h-23.8v42.6h.5zm26.8-28.7c0 3.4-2.3 4.9-6.4 4.9h-7.9v-9h7.9c4.5.3 6.4 1.1 6.4 4.1z"
+          ></path>
+        </svg>
+      </a>
+      <form method="post">
+        <fieldset class="form__email">
+          <label for="email" id="email" class="form__label">
+            ● Stay in the know
+          </label>
+          <input type="email" id="email" placeholder="Email Adress" />
+          <button
+            class="footer__button"
+            type="submit"
+            name="Submit"
+            value="Submit"
+            role="button"
+          >
+            <figure class="footer__button__media">
+              <svg
+                class="footer__button__icon"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 17 17"
+              >
+                <path d="M.1 7.5h14v2H.1z" fill="#F4F4F4"></path>
+                <path
+                  d="m8.4 0 8.5 8.5-1.4 1.4L7 1.4 8.4 0z"
+                  fill="#F4F4F4"
+                ></path>
+                <path
+                  d="m7 15.6 8.5-8.5 1.4 1.4L8.4 17 7 15.6z"
+                  fill="#F4F4F4"
+                ></path>
+              </svg>
+            </figure>
+          </button>
+        </fieldset>
+      </form>
+      <h2 class="footer__title">
+        We collaborate with ambitious brands and people. Let's build.
+        <a href="mailto:biz@basicagency.com">biz@basicagency.com</a>
+      </h2>
+      <nav class="footer__navigation">
+        <dl class="footer__navigation__list">
+          <dt class="footer__navigation__title">Social</dt>
+          <dd class="footer__navigation__item">
+            <a href="instagram.com" class="footer__navigation__link"
+              >Instagram</a
+            >
+          </dd>
+          <dd class="footer__navigation__item">
+            <a href="twitter.com" class="footer__navigation__link">Twitter</a>
+          </dd>
+          <dd class="footer__navigation__item">
+            <a href="linkedin.com" class="footer__navigation__link">Linkedin</a>
+          </dd>
+          <dd class="footer__navigation__item">
+            <a href="facebook.com" class="footer__navigation__link">Facebook</a>
+          </dd>
+          <dt class="footer__navigation__title">Initiatives</dt>
+          <dd class="footer__navigation__item">
+            <a href="instagram.com" class="footer__navigation__link">Crafted</a>
+          </dd>
+          <dd class="footer__navigation__item">
+            <a href="twitter.com" class="footer__navigation__link">Applied</a>
+          </dd>
+          <dd class="footer__navigation__item">
+            <a href="linkedin.com" class="footer__navigation__link"
+              >Brandbeats</a
+            >
+          </dd>
+          <dd class="footer__navigation__item">
+            <a href="facebook.com" class="footer__navigation__link">Moves</a>
+          </dd>
+          <dd class="footer__navigation__item">
+            <a href="facebook.com" class="footer__navigation__link">B®/Good</a>
+          </dd>
+          <dt class="footer__navigation__title">Officies</dt>
+          <dd class="footer__navigation__item">
+            <a href="instagram.com" class="footer__navigation__link"
+              >San Diego – CA</a
+            >
+          </dd>
+          <dd class="footer__navigation__item">
+            <a href="twitter.com" class="footer__navigation__link"
+              >New York – NY</a
+            >
+          </dd>
+          <dd class="footer__navigation__item">
+            <a href="linkedin.com" class="footer__navigation__link"
+              >Bay Area – CA</a
+            >
+          </dd>
+          <dd class="footer__navigation__item">
+            <a href="linkedin.com" class="footer__navigation__link"
+              >St. Louis – MO</a
+            >
+          </dd>
+          <dd class="footer__navigation__item">
+            <a href="facebook.com" class="footer__navigation__link"
+              >Amsterdam – NL</a
+            >
+          </dd>
+          <dd class="footer__navigation__item">
+            <a href="facebook.com" class="footer__navigation__link"
+              >London – EN</a
+            >
+          </dd>
+          <dd class="footer__navigation__item">
+            <a href="facebook.com" class="footer__navigation__link"
+              >Berlin – GE</a
+            >
+          </dd>
+          <dd class="footer__navigation__item">
+            <a href="facebook.com" class="footer__navigation__link"
+              >Argentina – AR</a
+            >
+          </dd>
+        </dl>
+      </nav>
+      <aside class="footer__copy">
+        <p class="footer__copy__label">BASIC/DEPT®, INC 10 - 23©</p>
+        <p class="footer__copy__description">
+          Easy to undestand, imposible to ignore.™
+        </p>
+        <ul class="footer__copy__list">
+          <li class="footer__copy__item">
+            <a href="/" class="footer__copy__link">Terms</a>
+          </li>
+          <li class="footer__copy__item">
+            <a href="/" class="footer__copy__link">Privacy policy</a>
+          </li>
+        </ul>
+      </aside>
+    </footer>
+    <script type="module" src="app/index.js"></script>
   </body>
 </html>
