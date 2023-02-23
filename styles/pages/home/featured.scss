@@ -1,0 +1,80 @@
+@use '../../utils' as *;
+@use '../../shared' as *;
+
+.home__featured {
+  padding-inline: 8rem;
+  line-height: 1.4;
+  margin-block-end: 8rem;
+
+  &__title {
+    @extend %title-42;
+    text-transform: uppercase;
+    font-weight: 700;
+    max-inline-size: 8rem;
+    margin-block-end: 8.5rem;
+    line-height: 1;
+  }
+
+  &__list {
+    margin-block-start: 12rem;
+    display: grid;
+    grid-template-columns: repeat(5, 37rem);
+    gap: 10rem;
+  }
+
+  &__item {
+    &:nth-child(1) {
+      figure {
+        inline-size: 27.2rem;
+        block-size: 9.2rem;
+      }
+    }
+    &:nth-child(2) {
+      figure {
+        inline-size: 12.8rem;
+        block-size: 4.2rem;
+      }
+    }
+    &:nth-child(3) {
+      figure {
+        inline-size: 17.1rem;
+        block-size: 4.2rem;
+      }
+    }
+    &:nth-child(4) {
+      figure {
+        inline-size: 4.2rem;
+        block-size: 4.2rem;
+      }
+    }
+    &:nth-child(5) {
+      figure {
+        inline-size: 29.55rem;
+        block-size: 5.771rem;
+      }
+    }
+
+    &__title {
+      padding-block-start: 10rem;
+      @extend %title-22;
+      font-weight: 700;
+      text-transform: uppercase;
+    }
+  }
+
+  &__picture {
+    display: flex;
+    align-items: center;
+    inline-size: 100%;
+    block-size: 4rem;
+  }
+  &__media {
+    position: relative;
+    margin-block-end: 4rem;
+  }
+
+  &__image {
+    @extend %cover;
+    object-fit: contain;
+  }
+}

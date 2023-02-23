@@ -1,0 +1,56 @@
+@use '../utils' as *;
+@use '../shared' as *;
+.navigation {
+  @extend %cover;
+  pointer-events: none;
+  position: relative;
+  z-index: z('navigation');
+
+  &__link {
+    font-size: 0;
+    position: absolute;
+    top: 5rem;
+    left: 8rem;
+    pointer-events: auto;
+    transition: opacity 0.4s ease;
+    inline-size: 16rem;
+    block-size: 2.1rem;
+
+    &:hover {
+      opacity: 0.5;
+    }
+  }
+
+  &__list{
+    display: flex;
+    position: absolute;
+    top: 5rem;
+    left: 50%;
+    transform: translateX(-50%);
+    @extend %description-14;
+    text-transform: uppercase;
+    color: $color-wild-sand;
+
+
+
+    &__item {
+      pointer-events: auto;
+      &:not(:last-child) {
+        margin-inline-end: 6rem;
+      }
+    }
+    &__link {
+      @extend %link--hidden;
+    }
+  }
+
+  &__button {
+    font-size: 0;
+    inline-size: 2.2rem;
+    block-size: 0.7rem;
+    position: absolute;
+    top: 5rem;
+    right: 8rem;
+    pointer-events: auto;
+  }
+}

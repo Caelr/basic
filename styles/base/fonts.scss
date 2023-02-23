@@ -1,0 +1,22 @@
+@use '../utils' as *;
+
+@font-face {
+  font-family: $font-sa;
+  src: url('/sa-regular.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: $font-sa;
+  src: url('/sa-medium.woff2') format('woff2');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: $font-sa;
+  src: url('/sa-bold.woff2') format('woff2');
+  font-weight: 700;
+  font-style: normal;
+}

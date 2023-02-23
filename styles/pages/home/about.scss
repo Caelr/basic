@@ -1,0 +1,17 @@
+@use '../../utils' as *;
+@use '../../shared' as *;
+
+.home__about {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  &__title {
+    @extend %title-83;
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+
+  &__description {
+    text-transform: uppercase;
+    font-weight: 700;
+  }
+}

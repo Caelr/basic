@@ -1,0 +1,62 @@
+@use '../utils' as *;
+
+%button__wrapper {
+  position: relative;
+  overflow: hidden;
+  display: inline-block;
+  vertical-align: top;
+}
+
+%button__bg {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: currentColor;
+  transition: transform 0.7s $ease-in-out;
+}
+
+%button__bg--visible {
+  transform: scaleY(1);
+  transform-origin: bottom;
+}
+
+%button__bg--hidden {
+  transform: scaleY(0);
+  transform-origin: top;
+}
+
+%link {
+  @extend %button__wrapper;
+
+  display: inline-block;
+
+  &:after {
+    @extend %button__bg;
+    @extend %button__bg--visible;
+  }
+
+  &:hover {
+    &:after {
+      @extend %button__bg--hidden;
+    }
+  }
+}
+
+%button--hidden {
+  @extend %button__wrapper;
+  display: inline-block;
+
+  &:after {
+    @extend %button__bg;
+    @extend %button__bg--hidden;
+  }
+
+  &:hover {
+    &:after {
+      @extend %button__bg--visible;
+    }
+  }
+}

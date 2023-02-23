@@ -1,3 +1,4 @@
+@use 'variables' as *;
 %cover {
   position: absolute;
   top: 0;
@@ -23,4 +24,17 @@
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+%link--button {
+  text-transform: uppercase;
+  font-weight: 700;
+  margin-block-start: 4rem;
+  margin-block-end: 9.3rem;
+  border: solid 1px $color-tuatara;
+  justify-self: baseline;
+  padding-inline: 3rem;
+  padding-block: 1.5rem;
+  border-radius: 6.6rem;
+
 }
