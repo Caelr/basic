@@ -16,6 +16,17 @@
     inline-size: 16rem;
     block-size: 2.1rem;
 
+    @include media('<=phone') {
+      top: 3.5rem;
+      left: 4rem;
+      inline-size: 13.5rem;
+      block-size: 1.8rem;
+    }
+
+    &__icon {
+      fill: $color-wild-sand;
+    }
+
     &:hover {
       opacity: 0.5;
     }
@@ -31,6 +42,9 @@
     text-transform: uppercase;
     color: $color-wild-sand;
 
+    @include media('<=phone') {
+      display: none;
+    }
 
 
     &__item {
@@ -52,5 +66,22 @@
     top: 5rem;
     right: 8rem;
     pointer-events: auto;
+
+    @include media('<=phone') {
+      display: none;
+    }
+  }
+}
+
+.mobile__navigation__link {
+  text-transform: uppercase;
+  color: $color-wild-sand;
+  position: absolute;
+  top: 3.5rem;
+  right: 4rem;
+  display: none;
+  pointer-events: auto;
+  @include media('<=phone') {
+    display: block;
   }
 }

@@ -4,15 +4,23 @@
 .home__featured {
   padding-inline: 8rem;
   line-height: 1.4;
-  margin-block-end: 8rem;
+  margin-block-end: 18.5rem;
+  @include media('<=phone') {
+    padding-inline: 4rem;
+    margin-block-end: 12.5rem;
+  }
 
   &__title {
     @extend %title-42;
     text-transform: uppercase;
     font-weight: 700;
-    max-inline-size: 8rem;
+    inline-size: 8rem;
     margin-block-end: 8.5rem;
     line-height: 1;
+    @include media('<=phone') {
+      inline-size: 35rem;
+      margin-block-end: 6.25rem;
+    }
   }
 
   &__list {
@@ -20,6 +28,11 @@
     display: grid;
     grid-template-columns: repeat(5, 37rem);
     gap: 10rem;
+    @include media('<=phone') {
+      margin-block-start: 6.25rem;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 4rem;
+    }
   }
 
   &__item {
@@ -59,6 +72,9 @@
       @extend %title-22;
       font-weight: 700;
       text-transform: uppercase;
+      @include media('<=phone') {
+        padding-block-start: 4rem;
+      }
     }
   }
 

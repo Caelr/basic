@@ -1,0 +1,203 @@
+@use '../utils' as *;
+@use '../shared' as *;
+
+.footer {
+  position: relative;
+  color: $color-wild-sand;
+  background-color: $color-tuatara;
+  padding-block-start: 12rem;
+  display: grid;
+  row-gap: 12rem;
+  column-gap: 8.5rem;
+  grid-template-columns: repeat(2, 1fr);
+
+  @include media('<=phone') {
+    padding-block-start: 6rem;
+    row-gap: 5rem;
+    grid-template-columns: 1fr;
+  }
+
+  &__link {
+    padding-inline-start: 8rem;
+    grid-column: 1;
+    grid-row: 1;
+
+    @include media('<=phone') {
+      padding-inline-start: 4rem;
+    }
+    &__icon {
+      fill: currentColor;
+      inline-size: 6.8rem;
+      block-size: 2.2rem;
+    }
+  }
+
+  &__title {
+    @extend %title-32;
+    grid-row: 1;
+    max-inline-size: 62rem;
+    @include media('<=phone') {
+      grid-row: 2 / 3;
+      max-inline-size: 58rem;
+      padding-inline-start: 4rem;
+    }
+  }
+
+  &__copy {
+    @extend %description-11;
+    background-color: $color-cod-grey;
+    color: $color-scorpion;
+    padding-inline: 8rem;
+    padding-block: 2rem;
+    text-transform: uppercase;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    grid-column: 1 / -1;
+    @include media('<=phone') {
+      flex-direction: column;
+      gap: 1rem;
+    }
+    &__list {
+      display: flex;
+      gap: 2rem;
+      font-weight: 700;
+      @include media('<=phone') {
+
+      }
+    }
+  }
+
+  &__form {
+    padding-inline-start: 8rem;
+    inline-size: 75rem;
+    @include media('<=phone') {
+      inline-size: 60rem;
+      padding-inline-start: 4rem;
+    }
+    &__button__icon {
+      position: absolute;
+      inline-size: 2rem;
+      top: 5rem;
+      right: 2.5rem;
+    }
+
+    &__email {
+      position: relative;
+      padding-inline-end: 2.4rem;
+    }
+    &__label {
+      text-transform: uppercase;
+    }
+
+    & input {
+      @extend %description-18;
+      appearance: none;
+      background-color: transparent;
+      block-size: 5.5rem;
+      border: 0;
+      border-bottom: 1px solid;
+      color: currentColor;
+      font-family: $font-sa;
+      inline-size: 100%;
+      line-height: 5.5rem;
+      margin-block-start: 1rem;
+      user-select: none;
+      &:focus {
+        outline: none;
+      }
+
+      &::placeholder {
+        color: currentColor;
+      }
+    }
+  }
+
+  &__navigation {
+    &__list {
+      display: grid;
+      grid-template-areas:
+        'social initiatives offices'
+        'instagram crafted san-diego'
+        'twitter applied new-york'
+        'linkedin brandbeats bay-area'
+        'facebook moves st-louis'
+        '. bgood amsterdam'
+        '. . london'
+        '. . berlin'
+        '. . argentina';
+
+      @include media('<=phone') {
+        display: block;
+        padding-inline-start: 4rem;
+      }
+    }
+
+    &__title {
+      text-transform: uppercase;
+      margin-block-end: 2rem;
+      &::before {
+        content: '●';
+        margin-inline-end: 1.2rem;
+      }
+
+      &:first-of-type {
+        grid-area: social;
+      }
+      &:nth-of-type(2) {
+        grid-area: initiatives;
+      }
+      &:last-of-type {
+        grid-area: offices;
+      }
+    }
+
+    &__item {
+      &:not(:last-child) {
+        margin-block-end: 0.7rem;
+      }
+      &:nth-of-type(1) {
+        grid-area: instagram;
+      }
+      &:nth-of-type(2) {
+        grid-area: twitter;
+      }
+      &:nth-of-type(3) {
+        grid-area: linkedin;
+      }
+      &:nth-of-type(4) {
+        grid-area: facebook;
+        @include media('<=phone') {
+          margin-block-end: 4rem;
+        }
+      }
+      &:nth-of-type(6) {
+        grid-area: applied;
+      }
+      &:nth-of-type(7) {
+        grid-area: brandbeats;
+      }
+      &:nth-of-type(8) {
+        grid-area: moves;
+      }
+      &:nth-of-type(9) {
+        grid-area: bgood;
+        @include media('<=phone') {
+          margin-block-end: 4rem;
+        }
+      }
+      &:nth-of-type(14) {
+        grid-area: amsterdam;
+      }
+      &:nth-of-type(15) {
+        grid-area: london;
+      }
+      &:nth-of-type(16) {
+        grid-area: berlin;
+      }
+      &:nth-of-type(17) {
+        grid-area: argentina;
+      }
+    }
+  }
+}

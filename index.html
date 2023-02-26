@@ -26,6 +26,7 @@
           ></path>
         </svg>
       </a>
+      <a href="/" class="mobile__navigation__link">Menu</a>
       <ul class="navigation__list">
         <li class="navigation__list__item">
           <a href="" class="navigation__list__link">Work</a>
@@ -168,8 +169,7 @@
             <h2 class="home__featured__title">Featured engagements</h2>
             <ul class="home__featured__list">
               <li class="home__featured__item">
-                <picture class="home__featured__picture">
-
+                <div class="home__featured__picture">
                   <figure class="home__featured__media">
                     <img
                       src="/google.webp"
@@ -177,7 +177,7 @@
                       class="home__featured__image"
                     />
                   </figure>
-                </picture>
+                </div>
 
                 <h3 class="home__featured__item__title">Google</h3>
                 <p class="home__featured__item__description">
@@ -189,7 +189,7 @@
                 </p>
               </li>
               <li class="home__featured__item">
-                <picture class="home__featured__picture">
+                <div class="home__featured__picture">
                   <figure class="home__featured__media">
                     <img
                       src="/kfc.webp"
@@ -197,7 +197,7 @@
                       class="home__featured__image"
                     />
                   </figure>
-                </picture>
+                </div>
 
                 <h3 class="home__featured__item__title">KFC</h3>
                 <p class="home__featured__item__description">
@@ -210,7 +210,7 @@
                 </p>
               </li>
               <li class="home__featured__item">
-                <picture class="home__featured__picture">
+                <div class="home__featured__picture">
                   <figure class="home__featured__media">
                     <img
                       src="/wilson.webp"
@@ -218,7 +218,7 @@
                       class="home__featured__image"
                     />
                   </figure>
-                </picture>
+                </div>
 
                 <h3 class="home__featured__item__title">Wilson</h3>
                 <p class="home__featured__item__description">
@@ -230,7 +230,7 @@
                 </p>
               </li>
               <li class="home__featured__item">
-                <picture class="home__featured__picture">
+                <div class="home__featured__picture">
                   <figure class="home__featured__media">
                     <img
                       src="/atandt.webp"
@@ -238,7 +238,7 @@
                       class="home__featured__image"
                     />
                   </figure>
-                </picture>
+                </div>
 
                 <h3 class="home__featured__item__title">AT&T</h3>
                 <p class="home__featured__item__description">
@@ -249,7 +249,7 @@
                 </p>
               </li>
               <!-- <li class="home__featured__item">
-                <picture class="home__featured__picture">
+                <div class="home__featured__picture">
                   <figure class="home__featured__media">
                     <img
                       src="/patagonia.webp"
@@ -257,7 +257,7 @@
                       class="home__featured__image"
                     />
                   </figure>
-                </picture>
+                </div>
 
                 <h3 class="home__featured__item__title">Patagonia</h3>
                 <p class="home__featured__item__description">
@@ -276,17 +276,19 @@
             </h2>
             <p class="home__about__description">Adweek agency spotlight</p>
             <a href="/" class="home__about__link">Aboout us</a>
-            <video
-              src="/about.mp4"
-              loop
-              autoplay
-              muted
-              class="home__about__video"
-            ></video>
+            <figure class="home__about__media">
+              <video
+                src="/about.mp4"
+                loop
+                autoplay
+                muted
+                class="home__about__video"
+              ></video>
+            </figure>
           </section>
           <section class="home__news">
             <h2 class="home__news__title">Featured news</h2>
-            <a href="/" class="home__news__link">View all</a>
+            <a href="/" class="home__news__link__button">View all</a>
             <ul class="home__news__list">
               <li class="home__news__item">
                 <a href="/" class="home__news__link">
@@ -297,10 +299,14 @@
                       class="home__news__image"
                     />
                   </figure>
-                  <h3 class="home__news__link__title">
-                    5 ways to fall in love with learning accessibility
-                  </h3>
-                  <p class="home__news__date"><strong>Press </strong> 2.9.23</p>
+                  <div class="home__news__content">
+                    <h3 class="home__news__link__title">
+                      5 ways to fall in love with learning accessibility
+                    </h3>
+                    <p class="home__news__date">
+                      <strong>Press </strong> 2.9.23
+                    </p>
+                  </div>
                   <svg
                     class="home__news__arrow"
                     xmlns="http://www.w3.org/2000/svg"
@@ -324,11 +330,15 @@
                       class="home__news__image"
                     />
                   </figure>
-                  <h3 class="home__news__link__title">
-                    How brands can represent people with disabilities with
-                    authenticity
-                  </h3>
-                  <p class="home__news__date"><strong>Press </strong> 2.7.23</p>
+                  <div class="home__news__content">
+                    <h3 class="home__news__link__title">
+                      How brands can represent people with disabilities with
+                      authenticity
+                    </h3>
+                    <p class="home__news__date">
+                      <strong>Press </strong> 2.7.23
+                    </p>
+                  </div>
                   <svg
                     class="home__news__arrow"
                     xmlns="http://www.w3.org/2000/svg"
@@ -352,12 +362,14 @@
                       class="home__news__image"
                     />
                   </figure>
-                  <h3 class="home__news__link__title">
-                    How brand can contribute to make a better Internet
-                  </h3>
-                  <p class="home__news__date">
-                    <strong>Press </strong> 1.19.23
-                  </p>
+                  <div class="home__news__content">
+                    <h3 class="home__news__link__title">
+                      How brand can contribute to make a better Internet
+                    </h3>
+                    <p class="home__news__date">
+                      <strong>Press </strong> 1.19.23
+                    </p>
+                  </div>
                   <svg
                     class="home__news__arrow"
                     xmlns="http://www.w3.org/2000/svg"
@@ -381,12 +393,14 @@
                       class="home__news__image"
                     />
                   </figure>
-                  <h3 class="home__news__link__title">
-                    Data and creativity for campaign
-                  </h3>
-                  <p class="home__news__date">
-                    <strong>Press </strong> 12.14.22
-                  </p>
+                  <div class="home__news__content">
+                    <h3 class="home__news__link__title">
+                      Data and creativity for campaign
+                    </h3>
+                    <p class="home__news__date">
+                      <strong>Press </strong> 12.14.22
+                    </p>
+                  </div>
                   <svg
                     class="home__news__arrow"
                     xmlns="http://www.w3.org/2000/svg"
@@ -410,10 +424,14 @@
                       class="home__news__image"
                     />
                   </figure>
-                  <h3 class="home__news__link__title">
-                    Case study, how to win agency of the year
-                  </h3>
-                  <p class="home__news__date"><strong>Press </strong>2.9.23</p>
+                  <div class="home__news__content">
+                    <h3 class="home__news__link__title">
+                      Case study, how to win agency of the year
+                    </h3>
+                    <p class="home__news__date">
+                      <strong>Press </strong>2.9.23
+                    </p>
+                  </div>
                   <svg
                     class="home__news__arrow"
                     xmlns="http://www.w3.org/2000/svg"
@@ -437,12 +455,14 @@
                       class="home__news__image"
                     />
                   </figure>
-                  <h3 class="home__news__link__title">
-                    B/D® Jams earns awwwards site of the month
-                  </h3>
-                  <p class="home__news__date">
-                    <strong>Press </strong> 10.22.22
-                  </p>
+                  <div class="home__news__content">
+                    <h3 class="home__news__link__title">
+                      B/D® Jams earns awwwards site of the month
+                    </h3>
+                    <p class="home__news__date">
+                      <strong>Press </strong> 10.22.22
+                    </p>
+                  </div>
                   <svg
                     class="home__news__arrow"
                     xmlns="http://www.w3.org/2000/svg"
@@ -477,34 +497,31 @@
           ></path>
         </svg>
       </a>
-      <form method="post">
-        <fieldset class="form__email">
-          <label for="email" class="form__label"> ● Stay in the know </label>
-          <input type="email" id="email" placeholder="Email Adress" />
+      <form method="post" class="footer__form">
+        <fieldset class="footer__form__email">
+          <label for="email" class="footer__form__label"> ● Stay in the know </label>
+          <input type="email" id="email" placeholder="Email Address" />
           <button
-            class="footer__button"
+            class="footer__form__button"
             type="submit"
             name="Submit"
             value="Submit"
-            role="button"
           >
-            <figure class="footer__button__media">
-              <svg
-                class="footer__button__icon"
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 17 17"
-              >
-                <path d="M.1 7.5h14v2H.1z" fill="#F4F4F4"></path>
-                <path
-                  d="m8.4 0 8.5 8.5-1.4 1.4L7 1.4 8.4 0z"
-                  fill="#F4F4F4"
-                ></path>
-                <path
-                  d="m7 15.6 8.5-8.5 1.4 1.4L8.4 17 7 15.6z"
-                  fill="#F4F4F4"
-                ></path>
-              </svg>
-            </figure>
+            <svg
+              class="footer__form__button__icon"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 17 17"
+            >
+              <path d="M.1 7.5h14v2H.1z" fill="#F4F4F4"></path>
+              <path
+                d="m8.4 0 8.5 8.5-1.4 1.4L7 1.4 8.4 0z"
+                fill="#F4F4F4"
+              ></path>
+              <path
+                d="m7 15.6 8.5-8.5 1.4 1.4L8.4 17 7 15.6z"
+                fill="#F4F4F4"
+              ></path>
+            </svg>
           </button>
         </fieldset>
       </form>
@@ -547,7 +564,7 @@
           <dd class="footer__navigation__item">
             <a href="facebook.com" class="footer__navigation__link">B®/Good</a>
           </dd>
-          <dt class="footer__navigation__title">Officies</dt>
+          <dt class="footer__navigation__title">Offices</dt>
           <dd class="footer__navigation__item">
             <a href="instagram.com" class="footer__navigation__link"
               >San Diego – CA</a

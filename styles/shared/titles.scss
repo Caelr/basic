@@ -8,6 +8,13 @@
   }
 }
 
+%title-32 {
+  font-family: $font-sa;
+  font-size: 3.2rem;
+  @include media('<=phone') {
+    font-size: 2.2rem;
+  }
+}
 %title-38 {
   font-family: $font-sa;
   font-size: 3.8rem;
@@ -23,9 +30,9 @@
     font-size: 2.4rem;
   }
 }
-%title-83 {
+%title-108 {
   font-family: $font-sa;
-  font-size: 8.3rem;
+  font-size: 10.4rem;
   @include media('<=phone') {
     font-size: 4.6rem;
   }

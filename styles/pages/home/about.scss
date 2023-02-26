@@ -2,16 +2,75 @@
 @use '../../shared' as *;
 
 .home__about {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  min-block-size: 100rem;
+  position: relative;
+  @include media('<=phone') {
+    min-block-size: 40rem;
+  }
   &__title {
-    @extend %title-83;
+    @extend %title-108;
     font-weight: 700;
     text-transform: uppercase;
+    max-inline-size: 74.3rem;
+    position: absolute;
+    top: 0;
+    left: 8rem;
+    @include media('<=phone') {
+      left: 4rem;
+      max-inline-size: 32rem;
+    }
   }
 
   &__description {
     text-transform: uppercase;
     font-weight: 700;
+
+    position: absolute;
+    top: 60rem;
+    left: 8rem;
+    @include media('<=phone') {
+      top: 25rem;
+      left: 4rem;
+    }
+  }
+
+  &__link {
+    @extend %link--button;
+    transition: all 0.4s $ease-out-expo;
+    @extend %description-14;
+    @include media('<=phone') {
+      padding-block: 1rem;
+    }
+    &:hover {
+      background-color: $color-tuatara;
+      color: $color-wild-sand;
+    }
+
+    position: absolute;
+    top: 70rem;
+    left: 8rem;
+
+    @include media('<=phone') {
+      top: 30rem;
+      left: 4rem;
+    }
+  }
+
+  &__media {
+    position: absolute;
+    top: 0;
+    right: 8rem;
+    inline-size: 83.3rem;
+    block-size: 97.9rem;
+
+    @include media('<=phone') {
+      right: 4rem;
+      inline-size: 32.7rem;
+      block-size: 47.8rem;
+    }
+  }
+  &__video {
+    @extend %cover;
+    object-fit: cover;
   }
 }

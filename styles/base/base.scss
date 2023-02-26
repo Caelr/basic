@@ -13,7 +13,7 @@ html {
   background: $color-wild-sand;
   color: $color-tuatara;
 
-  @include media('<phone') {
+  @include media('<=phone') {
     font-size: calc($vw / 750px * 10px);
   }
 }
@@ -21,7 +21,7 @@ html {
 body {
   font-family: $font-sa;
   @extend %description-18;
-  @include media('<phone') {
+  @include media('<=phone') {
   }
 }
 
